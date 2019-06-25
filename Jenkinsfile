@@ -7,4 +7,5 @@ pipeline {
         checkout scm
       }
     }
+  }
 }
