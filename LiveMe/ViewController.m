@@ -12,7 +12,7 @@
 
 @end
 
-@implementation ViewController
+@implementation ViewController1
 
 - (void)viewDidLoad {
     [super viewDidLoad];
