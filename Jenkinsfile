@@ -1,4 +1,5 @@
 
+import org.jenkinsci.plugins.workflow.steps.FlowInterruptedException
 
 node("checkout") {
 	stage('Checkout') {
