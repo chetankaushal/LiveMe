@@ -2,6 +2,6 @@
 import org.jenkinsci.plugins.workflow.steps.FlowInterruptedException
 
 def fastlane(task) {
-	sh "bundle exec Fastlane ${task}"
+	sh "bundle exec fastlane ${task}"
   }
 
