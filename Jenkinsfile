@@ -8,4 +8,9 @@ pipeline {
       }
     }
   }
+
+def fastlane(task) {
+	sh "bundle exec Fastlane ${task}"
+  }
+
 }
