@@ -1,13 +1,13 @@
 
 import org.jenkinsci.plugins.workflow.steps.FlowInterruptedException
 
-node("checkout") {
+def fastlane(task) {
+	sh "bundle exec Fastlane ${task}"
+  }
+
+node("xcode_stable") {
 	stage('Checkout') {
 		deleteDir()
 		checkout scm
 	}
 }
-
-def fastlane(task) {
-	sh "bundle exec Fastlane ${task}"
-  }
