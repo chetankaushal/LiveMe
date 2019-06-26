@@ -5,7 +5,7 @@ def fastlane(task) {
 	sh "bundle exec Fastlane ${task}"
   }
 
-node("xcode_stable") {
+node("master") {
 	stage('Checkout') {
 		deleteDir()
 		checkout scm
